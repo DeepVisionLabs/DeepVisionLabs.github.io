@@ -44,7 +44,7 @@
 
 
 			/* Common styles
-			* --------------------------------------- */			
+			* --------------------------------------- */
 			.section{
 				text-align:center;
 				overflow:hidden;
@@ -157,7 +157,7 @@
 				font-family:Perpetua;
 				src:url('perpetua.ttf');
 			}
-			
+
 			#section0{
 				padding: 0px 0;
 				overflow: hidden;
@@ -180,7 +180,7 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                
+
             }
 /*
             .videosection{
@@ -208,8 +208,8 @@
                 margin-top:50px;
 				width: 100%;
 				z-index: 1;
-			}	
-			
+			}
+
 			#section1 .box h2{
 				margin-left:auto;
 				margin-right:auto;
@@ -247,8 +247,8 @@
 
 			#section1 .container img{
 				position:absolute;
-				z-index: 1;	
-			}			
+				z-index: 1;
+			}
 			#section1 .bottomContainers{
 				position: absolute;
 				display: block;
@@ -326,24 +326,24 @@
 					height: 464px;
 				}
 			}
-			
+
 			#section2 .imgsContainer{
 				position: absolute;
 				width:100%;
 				height:100%;
 			}
-			
+
 			#section2 .imgsContainer div{
 				background-color:transparent;
 				color: #D6EBFF;
 				text-align: center;
 				font-size:20px;
 			}
-			
+
 			#section2 .line{
 				border-bottom: thick solid #D6EBFF;
 			}
-			
+
 			.modalBackground{
 				position:absolute;
 				left:0px;
@@ -381,7 +381,7 @@
 				text-align: center;
 				color:white;
 				opacity: 0;
-				z-index: 3;				
+				z-index: 3;
 			}
 
 
@@ -393,9 +393,9 @@
 			.medicalPages{
 				position:relative;
 				width:2000px;
-				height:100%;	
+				height:100%;
 				left:0px;
-			}						
+			}
 
 			.medicalPage{
 				height: 100%;
@@ -413,11 +413,11 @@
 			}
 
 			.medicalPage#rightPage{
-				left:1000px;	
+				left:1000px;
 			}
 
 			.medicalPage .modalDescription{
-				opacity: 1;	
+				opacity: 1;
 			}
 
 			.medicalPage .modalOverlay{
@@ -466,7 +466,7 @@
 				position:absolute;
 				z-index:1;
 				height:100%;
-				width:47.5%;				
+				width:47.5%;
 				opacity:0;
 				display:block;
 			}
@@ -495,7 +495,7 @@
 				top:10%;
 				display:block;
 			}
-			
+
 			#couchText{
 				position:absolute;
 				z-index:4;
@@ -514,7 +514,7 @@
 				width:40%;
 				top:30%;
 				display:block;
-			}						
+			}
 
 			/* Section 2
 			* --------------------------------------- */
@@ -536,11 +536,11 @@
 				height: 100%;
                 width: 100%;
 			}
-			
+
 			.brainText{
 				position: absolute;
 			}
-			
+
 			#brain1{
 				top: 9%;
 				left: 0%;
@@ -558,7 +558,7 @@
 				top:40%;
                 left:85%;
 			}
-			
+
 			#brain5{
 				top: 12%;
 				left: 85%;
@@ -581,7 +581,7 @@
 			}
 
 			#section4 .signupbox {
-				
+
 				margin:0;
 				text-align: left;
 				top: 25%;
@@ -610,7 +610,7 @@
 				width: 582px;
                 color: floralwhite;
                 font-size: 16pt;
-                
+
             }
             #emailbutton{
                 background-image: url("imgs/redemail.png");
@@ -674,13 +674,13 @@
 
 			/*
 			#section4 .signupbox {
-			width:305px; 
+			width:305px;
 			margin:0;
 			text-align: center;
 			top: 25%;
 			left: 25%;
 			position: absolute;
-			width: 582px;  
+			width: 582px;
 
 			}
 			*/
@@ -688,7 +688,7 @@
 			/* Nicely lines up the labels. */
 			#section4 .form label {display:inline-block; width:500px;}
 
-			/* You could add a class to all the input boxes instead, 
+			/* You could add a class to all the input boxes instead,
 			if you like. That would be safer, and more backwards-compatible */
 			#section4 .form input[type="email"],
 			#section4 .form input[type="password"],
@@ -697,7 +697,7 @@
 			form .line {clear:both;}
 			form .line.submit {text-align:right; width: 400px;}
 			input[type=submit] {padding:1px 1px; background:skyblue; border:0 none; cursor:pointer;
-				color: white; width: 54%; 
+				color: white; width: 54%;
 				-webkit-border-radius: 5px; border-radius: 5px; }
 
 
@@ -735,10 +735,10 @@ var console = { log: function() {} };
 
 		<script type="text/javascript">
 			$(document).ready(function() {
-				
+
 				$('.container').height($('.container').width());
-				
-				var medicalInterval;				
+
+				var medicalInterval;
 				var interiorDesignInterval;
 				var automotiveInterval;
 
@@ -760,21 +760,21 @@ var console = { log: function() {} };
 								$('.modalBackground').attr('src', outlineInteriorBackground);
 							}
 							else{
-								$('.modalBackground').attr('src', normalInteriorBackground)	
+								$('.modalBackground').attr('src', normalInteriorBackground)
 							}
 						}
 
 						$('.modalBackground').attr('src', outlineInteriorBackground);
 						interiorDesignInterval = setInterval(swapBackground, 400);
-						
+
 
 						//Positioning and sizing the couch
-						$('.modalMouseOver#couch').width(couchWidth = $('#interiorDesignModal').width()*0.56);		
+						$('.modalMouseOver#couch').width(couchWidth = $('#interiorDesignModal').width()*0.56);
 						$('.modalMouseOver#couch').height(couchHeight = $('#interiorDesignModal').height()*0.32);
 						$('.modalMouseOver#couch').css('left', couchLeft = $('#interiorDesignModal').width()*0.1);
-						$('.modalMouseOver#couch').css('top',couchTop = $('#interiorDesignModal').height()*0.525);							
+						$('.modalMouseOver#couch').css('top',couchTop = $('#interiorDesignModal').height()*0.525);
 
-						$('.modalMouseOver#clock').width(clockWidth = $('#interiorDesignModal').width()*0.074);		
+						$('.modalMouseOver#clock').width(clockWidth = $('#interiorDesignModal').width()*0.074);
 						$('.modalMouseOver#clock').height(clockHeight = $('#interiorDesignModal').height()*0.115);
 						$('.modalMouseOver#clock').css('left', clockLeft = $('#interiorDesignModal').width()*0.677);
 						$('.modalMouseOver#clock').css('top',clockTop = $('#interiorDesignModal').height()*0.325);
@@ -782,8 +782,8 @@ var console = { log: function() {} };
 
 						function expandCouch(){
 							$('.modalMouseOver#couch').stop().css('opacity',1);
-							$('#couchText').stop().animate({opacity:1},'fast');							
-							$('#interiorDesignModal .modalOverlay').stop().animate({opacity:0.5}, 'fast');							
+							$('#couchText').stop().animate({opacity:1},'fast');
+							$('#interiorDesignModal .modalOverlay').stop().animate({opacity:0.5}, 'fast');
 							$('.modalMouseOver#couch').stop().animate({
 								width: couchWidth*couchFactor,
 								height: couchHeight*couchFactor,
@@ -794,7 +794,7 @@ var console = { log: function() {} };
 
 						function expandClock(){
 							$('.modalMouseOver#clock').stop().css('opacity',1);
-							$('#clockText').stop().animate({opacity:1},'fast');							
+							$('#clockText').stop().animate({opacity:1},'fast');
 							$('#interiorDesignModal .modalOverlay').stop().animate({opacity:0.5}, 'fast');
 							$('.modalMouseOver#clock').stop().animate({
 								width: clockWidth*clockFactor,
@@ -806,7 +806,7 @@ var console = { log: function() {} };
 
 						function collapseCouch(){
 							$('#interiorDesignModal .modalOverlay').stop().animate({opacity:0}, 'fast');
-							$('#couchText').stop().animate({opacity:0},'fast');							
+							$('#couchText').stop().animate({opacity:0},'fast');
 							$('.modalMouseOver#couch').stop().animate({
 								width: couchWidth+"px",
 								height: couchHeight+"px",
@@ -819,7 +819,7 @@ var console = { log: function() {} };
 
 						function collapseClock(){
 							$('#interiorDesignModal .modalOverlay').stop().animate({opacity:0}, 'fast');
-							$('#clockText').stop().animate({opacity:0},'fast');							
+							$('#clockText').stop().animate({opacity:0},'fast');
 							$('.modalMouseOver#clock').stop().animate({
 								width: clockWidth+"px",
 								height: clockHeight+"px",
@@ -844,10 +844,10 @@ var console = { log: function() {} };
 							function(){
 								clearInterval(interiorDesignInterval);
 								$('.modalBackground').attr('src', normalInteriorBackground);
-								expandClock();	
+								expandClock();
 							},
 							function(){
-								collapseClock();	
+								collapseClock();
 							});
 
 
@@ -872,7 +872,7 @@ var console = { log: function() {} };
 								$('.modalBackground').attr('src', outlineAutoBackground);
 							}
 							else{
-								$('.modalBackground').attr('src', normalAutoBackground)	
+								$('.modalBackground').attr('src', normalAutoBackground)
 							}
 						}
 
@@ -881,25 +881,25 @@ var console = { log: function() {} };
 
 
 						//Positioning and sizing the engine specs
-						$('#engineSpecs').width($('#automotiveModal').height()*0.7);								
+						$('#engineSpecs').width($('#automotiveModal').height()*0.7);
 						$('#engineSpecs').height($('#automotiveModal').height()*0.7);
 						$('#engineSpecs').css('left', $('#automotiveModal').width()*0.05);
 						$('#engineSpecs').css('top', $('#automotiveModal').width()*0.05);
 
 						//Positioning and sizing the engine
-						$('.modalMouseOver#engine').width($('#automotiveModal').width()*0.26);								
+						$('.modalMouseOver#engine').width($('#automotiveModal').width()*0.26);
 						$('.modalMouseOver#engine').height($('#automotiveModal').height()*0.2);
 						$('.modalMouseOver#engine').css('left',$('#automotiveModal').width()*0.4);
 						$('.modalMouseOver#engine').css('top',$('#automotiveModal').height()*0.45);
 
 						function showSpecs(){
 							$('#automotiveModal .modalOverlay').stop().animate({opacity:0.5}, 'fast');
-							$('#automotiveModal .modalDescription').stop().animate({opacity:1},'fast');							
+							$('#automotiveModal .modalDescription').stop().animate({opacity:1},'fast');
 						}
 
 						function hideSpecs(){
 							$('#automotiveModal .modalOverlay').stop().animate({opacity:0}, 'fast');
-							$('#automotiveModal .modalDescription').stop().animate({opacity:0},'fast');	
+							$('#automotiveModal .modalDescription').stop().animate({opacity:0},'fast');
 						}
 
 						$('.modalMouseOver#engine').hover(
@@ -909,8 +909,8 @@ var console = { log: function() {} };
 								showSpecs();
 							},
 							function(){
-								hideSpecs();							
-							});		
+								hideSpecs();
+							});
 					},
 
 					afterClose: function(){
@@ -923,14 +923,14 @@ var console = { log: function() {} };
 					width: '90%',
 					height: '90%',
 					scrolling: 'no',
-					afterLoad: function(){						
+					afterLoad: function(){
 						function toggleMedical(){
 							var newLeft = '-1000px';
 							if ($('.medicalPages').css('left') == '-1000px'){
 								newLeft = '0px';
 							}
 							$('.medicalPages').animate({left:newLeft}, 'slow');
-						}						
+						}
 						medicalInterval = setInterval(toggleMedical,3000);
 					},
 
@@ -954,7 +954,7 @@ var console = { log: function() {} };
 						$('#shirt').css('top',0);
 						$('#shirt').css('width','47.5%');
 						$('#shirt').css('height','100%');
-						$('#fashionText').css('opacity',0);						
+						$('#fashionText').css('opacity',0);
 						setTimeout(function(){
 							$('#loadingCircle').css('opacity',1);
 							var thick = 3;
@@ -968,7 +968,7 @@ var console = { log: function() {} };
 								emptyFill: 'rgba(0,0,0,0)',
 								fill: {color: "#AAA"}
 							});
-						},1000);								  
+						},1000);
 					}
 				});
 
@@ -977,7 +977,7 @@ var console = { log: function() {} };
 					$('#loadingCircle').css('opacity',0);
 					$('#shirtCircle').css('opacity',1);
 					$('#shirt').animate({left:'60%',width:'25%',height:'50%',top:'25%'},'slow');
-					$('#cart').animate({top:'40%'}, 'slow');					
+					$('#cart').animate({top:'40%'}, 'slow');
 					$('#shirt').animate({top:'40%'}, 'slow', function(){
 						$('#fashionText').animate({opacity:1});
 					});
@@ -988,7 +988,7 @@ var console = { log: function() {} };
 						$(this).stop().animate({top:-200});
 					},
 					function(){
-					});	
+					});
 
 				$('.container').hover(
 					function(){
@@ -996,8 +996,8 @@ var console = { log: function() {} };
 					},
 					function(){
 						$(this).find('.overlay').stop().animate({top:0});
-					});	
-				
+					});
+
 				$('#fullpage').fullpage({
 					'verticalCentered': false,
 					'css3': true,
@@ -1023,7 +1023,7 @@ var console = { log: function() {} };
                             $('#headerImage').animate({height:'150px',width:'800px', top:'40%',left:'24%'}, 300);
                             $('#header').animate({top:'0px'});
 						}
-						
+
 						var stop = false;
 
 						//Enter RnD
@@ -1039,21 +1039,21 @@ var console = { log: function() {} };
 								else if (n<=3){
 									var right = $('#line'+n).offset().left + widths[n-1];
 									$('#line'+n).css('left', 'auto');
-									$('#line'+n).css('right',$('#section2').width()-right);								
+									$('#line'+n).css('right',$('#section2').width()-right);
 								}
 								if (n <= 4)
 									$('#line'+n).animate({width:widths[n-1]},500,function(){showLine(n+1)});
 							}
-							
+
 							function showText(id){
 								if (id == 6 || stop)
-									return;								
+									return;
 								var str = $('#brain'+id).text();
 								$('#brain'+id).empty();
 								$('#brain'+id).css('opacity',1);
 								addLetter(id, str, 0);
 							}
-							
+
 							function addLetter(id, str, index){
 								if (stop)
 									return;
@@ -1069,21 +1069,21 @@ var console = { log: function() {} };
 									showText(id+1);
 								else{
 								function next(){
-									addLetter(id, str,index+1);	
+									addLetter(id, str,index+1);
 								}
 									letterT = setTimeout(next, 25);
 								}
 							}
-							
+
 							$('.line').remove();
 							$('#text').hide();
 							$('.brainText').css('opacity',0);
 							$('.brainText br').replaceWith(' ');
-							
+
 							$('.brainText').find("span").each(function(index) {
     	var text = $(this).text();//get span content
     	$(this).replaceWith(text);//replace all span with just content
-	});							
+	});
 							$('#text').fadeIn(2000);
 							$('#section2').line(19, 18, 37, 30, "line1");
 $('#section2').line(17, 50, 32, 52, "line2");
@@ -1092,22 +1092,22 @@ $('#section2').line(70, 51, 83, 45, "line4");
 							$('#section2').line(84, 20, 69, 32, "line5");
 							$('.line').css('opacity',0);
 							for (var i = 1; i<=5; i++){
-								widths.push($('#line'+i).width());							
-								$('#brain'+i).width($('#brain'+i).width());								
+								widths.push($('#line'+i).width());
+								$('#brain'+i).width($('#brain'+i).width());
 								$('#line'+i).width(0);
 								$('#line'+i).css('opacity',1);
 							}
 							textT = setTimeout(function(){showText(1)}, 1000);
 							lineT = setTimeout(function(){showLine(1)}, 500);
 						}
-						
+
 						//Leave RnD
 						if (index == 3){
 							stop = true;
 							$('.line').animate({opacity:0},function(){$('.line').remove()});
 							$('.brainText').animate({opacity:0});
 						}
-						
+
 						//Leave 2nd Page
 						if (index == 2){
 							$.fancybox.close();
@@ -1118,8 +1118,8 @@ $('#section2').line(70, 51, 83, 45, "line4");
 						//playing the video
 						$('video').get(0).play();
 					},
-					anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage' ],
-					menu: '#menu2', 
+					anchors: ['Home', 'SneakPeak', 'ResearchDevelopment', 'ContactUs' ],
+					menu: '#menu2',
 					easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1)'
 //					easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)'
 				});
@@ -1136,17 +1136,17 @@ $('#section2').line(70, 51, 83, 45, "line4");
 
 
 		<div id="header">
-			<a href="#firstPage"><img src="imgs/logotransparent.png" alt="logo" id = "logo"/></a>
-			<a href="#firstPage"><img src="imgs/deepvisioncolor.png" alt="headerImage" id = "headerImage"/></a>
+			<a href="#Home"><img src="imgs/logotransparent.png" alt="logo" id = "logo"/></a>
+			<a href="#Home"><img src="imgs/deepvisioncolor.png" alt="headerImage" id = "headerImage"/></a>
 
 			<ul id="menu2">
-				<li data-menuanchor= "firstPage"><a href="#firstPage">Home</a></li>
-				<li data-menuanchor= "secondPage"><a href="#secondPage">Sneak Peek</a></li>
-				<li data-menuanchor= "3rdPage"><a href="#3rdPage">Research &amp; Development</a></li>
-				<li data-menuanchor= "4thPage"><a href="#4thPage">Contact</a></li>
+				<li data-menuanchor= "Home"><a href="#Home">Home</a></li>
+				<li data-menuanchor= "SneakPeak"><a href="#SneakPeak">Sneak Peek</a></li>
+				<li data-menuanchor= "ResearchDevelopment"><a href="#ResearchDevelopment">Research &amp; Development</a></li>
+				<li data-menuanchor= "ContactUs"><a href="#ContactUs">Contact</a></li>
 <!--				<li data-menuanchor= "5thPage"><a href="#5thPage">Contact</a></li>	  	    -->
 			</ul>
-			<!--	<a href="#firstPage"><img src="imgs/templogo.png" alt="logo" id = "logo"/></a>-->
+			<!--	<a href="#Home"><img src="imgs/templogo.png" alt="logo" id = "logo"/></a>-->
 		</div>
 
 		<!--<div id="footer"> Copyright © FreshXLabs.Inc</div>-->
@@ -1175,10 +1175,10 @@ $('#section2').line(70, 51, 83, 45, "line4");
 				<video autoplay loop muted  id="myVideo">
 						<source src="imgs/Fireflies%20%20%20FREE%20Video%20Background%20Loop%20HD%201080p.mp4" type="video/mp4">
 						<source src="imgs/Fireflies%20%20%20FREE%20Video%20Background%20Loop%20HD%201080p.mp4" type="video/webm">
-					</video>				
+					</video>
 -->
-					<div class="bottomContainers">						
-						<div class="container interiorDesign">							
+					<div class="bottomContainers">
+						<div class="container interiorDesign">
 							<a href="#interiorDesignModal" class="fancybox">
 								<img src="imgs/interiordesign.jpg" alt="iphone"/>
 							</a>
@@ -1209,11 +1209,11 @@ $('#section2').line(70, 51, 83, 45, "line4");
 									<img src="imgs/hoverauto.png" alt="iphone"/>
 								</a>
 							</div>
-						</div>		
+						</div>
 						<div class="container medical">
 							<a href="#medicalModal" class="fancybox">
 								<img src="imgs/medicalcollaborate.jpg" alt="iphone"/>
-							</a>							
+							</a>
 							<div class="overlay">
 								<a href="#medicalModal" class="fancybox">
 									<img src="imgs/med2.png" alt="iphone" id="overlayMedical" />
@@ -1228,7 +1228,7 @@ $('#section2').line(70, 51, 83, 45, "line4");
 								Take a <span style="color:#DAA520;font-family:Perpetua">D<span style="font-size:80%">EEP</span></span>er look at these images...
 							</h2>
 						</div>
-					</div>			
+					</div>
 				</div>
 			</div>
 
@@ -1239,11 +1239,11 @@ $('#section2').line(70, 51, 83, 45, "line4");
                     </h2>
 					<div class="box">
 					</div>
-                    
-					<div class="imgsContainer">						
+
+					<div class="imgsContainer">
 						<div id="brain1" class="brainText">Image Segmentation</div>
 						<div id="brain2" class="brainText">Edge Detection</div>
-						<div id="brain3" class="brainText">Deep Learning</div>>						
+						<div id="brain3" class="brainText">Deep Learning</div>>
 						<div id="brain4" class="brainText">Image Classification</div>
 						<div id="brain5" class="brainText">Stochastic Models</div>
 					</div>
@@ -1267,7 +1267,7 @@ $('#section2').line(70, 51, 83, 45, "line4");
 						</div>
 					</div>
 				</div>
-				 
+
 <div class="imgsContainer">
 <img src="imgs/ins5.png" alt="iphone" id="iphone-two" />
 </div>
@@ -1278,37 +1278,37 @@ $('#section2').line(70, 51, 83, 45, "line4");
 			<div class="section moveDown" id="section4">
 				<div class="wrap">
 					<div class="transbox">
-					
+
 <!--						<h2 style = "color:floralwhite"><b>Contact Us</b></h2>-->
 						<address id = "address" style = "color:floralwhite">
 							151 Charles Street West<br>
 							Kitchener, Ontario<br>
 							Canada, N2G 1H6<br>
 						</address>
-						
+
 					</div>
 					<div class = signupbox>
 							<h3 class=title><b>Sign up to join our exclusive list of API beta testers:</b></h3>
-							<span class="inputWithButton" action="//formspree.io/mradeelzaman@gmail.com"
+							<form class="inputWithButton" action="//formspree.io/mradeelzaman@gmail.com"
       method="POST">
 								<input type="email" placeholder="Your email"/>
 								<input type= "submit" value = "Sign up"/>
-							</span>
+							</form>
 						</div>
-						
+
 						<div id = "signupbox2">
 							<h3 class="title"><b>Stay in the loop with Deep Vision:</b></h3>
-							<span class="inputWithButton" action="//formspree.io/mradeelzaman@gmail.com"
+							<form class="inputWithButton" action="//formspree.io/mradeelzaman@gmail.com"
       method="POST">
 								<input type="email" placeholder="Your email"/>
 								<input type= "submit" value = "Sign up"/>
-							</span>
+							</form>
 						</div>
 						<div id = "emailbox">
 						        Get More Info<address style = "font-size: 13pt;"><b>Inquiries: </b>inquiries@deepvision.co<br>
                                <b>Press: </b>press@deepvision.co</address>
 						</div>
-					
+
 				</div>
 				<div id = "footer">
                     <img src="imgs/logotransparent.png" style = "height:6%; width:4%; position: fixed; left:42%; margin-top:8px;"/>
@@ -1327,7 +1327,7 @@ $('#section2').line(70, 51, 83, 45, "line4");
 			</div></div>
 		<div style="display:none"><div id="fashionModal" class="modal">
 			<img id="girl" src="imgs/fashion2.png"/>
-			<div id="shirt">				
+			<div id="shirt">
 				<img src="imgs/temp/boylondonshirt.png"/>
 				<div class="circle" id="shirtCircle"></div>
 			</div>
@@ -1349,7 +1349,7 @@ $('#section2').line(70, 51, 83, 45, "line4");
 					<div class="modalOverlay"></div>
 					<div class="modalDescription">Collaborate with other medical professionals</div>
 				</div>
-				<div class="medicalPage" id="rightPage">					
+				<div class="medicalPage" id="rightPage">
 					<img class="medicalPageImage" src="imgs/temp/doctorwpatient.jpg"/>
 					<div class="modalOverlay"></div>
 					<div class="modalDescription">Interact with patients like never before</div>
