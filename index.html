@@ -528,7 +528,7 @@
 			}
             #text{
                 position: absolute;
-                top: 76%;
+                top: 72%;
                 left: 50%;
                 width: 50%;
             }
@@ -540,12 +540,12 @@
 
 			.brainText{
 				position: absolute;
-                background-color black;
+                text-shadow:2px 2px 16px #000;
 				z-index: 9999;
 			}
 
 			#brain1{
-				top: 9%;
+				top: 20%;
 				left: 0%;
 			}
 			#brain2{
@@ -558,12 +558,12 @@
 
 			}
 			#brain4{
-				top:42%;
+				top:45%;
                 left:85%;
 			}
 
 			#brain5{
-				top: 15%;
+				top: 20%;
 				left: 85%;
 			}
 
@@ -1030,88 +1030,23 @@ var console = { log: function() {} };
                             $('#header').animate({top:'0px'});
 						}
 
-						var stop = false;
-
+                      
 						//Enter RnD
 						if (nextIndex == 3){
-							stop = false;
-							var widths = [];
-							var lineT, textT, letterT;
-							function showLine(n){
-								if (stop)
-									return;
-								if (n == 5 || n == 4)
-									$('#line'+n).animate({width:widths[n-1]},500);
-								else if (n<=3){
-									var right = $('#line'+n).offset().left + widths[n-1];
-									$('#line'+n).css('left', 'auto');
-									$('#line'+n).css('right',$('#section2').width()-right);
-								}
-								if (n <= 4)
-									$('#line'+n).animate({width:widths[n-1]},500,function(){showLine(n+1)});
-							}
+                            $('.brainText').hide();
+                            function showBrainText(index){
+                            if (index == 6)
+                                return;
+                            $('#brain'+index).fadeIn();
+                            setTimeout(function(){showBrainText(index+1);},300);
+                                }
+                            showBrainText(0);
 
-							function showText(id){
-								if (id == 6 || stop)
-									return;
-								var str = $('#brain'+id).text();
-								$('#brain'+id).empty();
-								$('#brain'+id).css('opacity',1);
-								addLetter(id, str, 0);
-							}
-
-							function addLetter(id, str, index){
-								if (stop)
-									return;
-								if (str[index] == ' ')
-									$('#brain'+id).append('<br>');
-								else{
-									var $letter = $('<span />').attr('class', 'fadeLetter').html(str[index]);
-									$('#brain'+id).append($letter);
-									$letter.hide();
-									$letter.fadeIn(100);
-								  }
-								if (index == str.length-1)
-									showText(id+1);
-								else{
-								function next(){
-									addLetter(id, str,index+1);
-								}
-									letterT = setTimeout(next, 25);
-								}
-							}
-
-							$('.line').remove();
-							$('#text').hide();
-							$('.brainText').css('opacity',0);
-							$('.brainText br').replaceWith(' ');
-
-							$('.brainText').find("span").each(function(index) {
-    	var text = $(this).text();//get span content
-    	$(this).replaceWith(text);//replace all span with just content
-	});
-							$('#text').fadeIn(2000);
-							$('#section2').line(19, 18, 37, 30, "line1");
-$('#section2').line(17, 50, 32, 52, "line2");
-							$('#section2').line(22, 77, 35, 66, "line3");
-$('#section2').line(70, 51, 83, 45, "line4");
-							$('#section2').line(84, 20, 69, 32, "line5");
-							$('.line').css('opacity',0);
-							for (var i = 1; i<=5; i++){
-								widths.push($('#line'+i).width());
-								$('#brain'+i).width($('#brain'+i).width());
-								$('#line'+i).width(0);
-								$('#line'+i).css('opacity',1);
-							}
-							textT = setTimeout(function(){showText(1)}, 1000);
-							lineT = setTimeout(function(){showLine(1)}, 500);
 						}
 
 						//Leave RnD
 						if (index == 3){
-							stop = true;
-							$('.line').animate({opacity:0},function(){$('.line').remove()});
-							$('.brainText').animate({opacity:0});
+                            $('.brainText').fadeOut();
 						}
 
 						//Leave 2nd Page
@@ -1240,7 +1175,7 @@ $('#section2').line(70, 51, 83, 45, "line4");
 
 			<div class="section moveDown" id="section2">
 				<div class="wrap">
-                    <h2 id = "text" style = "color:#D6EBFF; font-size: 26pt; width:50%;">
+                    <h2 id = "text" style = "color:#D6EBFF; font-size: 35pt; width:50%;">
                         Constant R&amp;D<br>Fueling Innovative Products
                     </h2>
 					<div class="box">
