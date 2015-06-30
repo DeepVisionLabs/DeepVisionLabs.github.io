@@ -1,360 +1,23 @@
-
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<!DOCTYPE HTML>
+<!--
+	Directive by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>DeepVision</title>
-
-		<meta name="author" content="DeepVision" />
-		<meta name="description" content="Web Renov" />
-		<meta name="keywords"  content="fresh, fashion" />
-		<meta name="Resource-type" content="Document" />
-        <meta name="google-site-verification" content="2BDmVkUT-SFYcPlcpYx1UB5HRu-bCnQVKY8hyhHws9s" />
-
-
-		<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
-		<link rel="stylesheet" type="text/css" href="examples.css" />
+		<meta charset="utf-8" />
+		<meta name="google-site-verification" content="2BDmVkUT-SFYcPlcpYx1UB5HRu-bCnQVKY8hyhHws9s" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="fancyapps-fancyBox-18d1712/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 
-		<style>
+        <style>
 
-
-			body{
-				color: #ffffff, #333;
-				font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
-			}
-
-
-			/* Style for our header texts
-			* --------------------------------------- */
-			h1{
-				font-size: 5em;
-				font-family: arial,helvetica;
-				font-family: arial,helvetica, tahoma, optima;
-				margin:0;
-				padding:0;
-				color: white;
-			}
-			h2{
-				font-size: 2em;
-				margin: 0 0 18px 0;
-				text-align: center;
-				font-family: arial,helvetica, tahoma, optima;
-			}
-
-
-			/* Common styles
-			* --------------------------------------- */
-			.section{
-				text-align:center;
-				overflow:hidden;
-			}
-			.wrap{
-				width: 1180px;
-				height: 100%;
-				margin-left: auto;
-				margin-right: auto;
-				position: relative;
-			}
-			.box{
-				text-align: left;
-				color: #FFFFFF;
-				font-size: 1.6em;
-			}
-
-
-			/* Fixed header and footer.
-			* --------------------------------------- */
-
-			/*    MENU RIGHT*/
-			#menu2 li {
-				display:inline-block;
-				margin-top: 13px;
-				background:#666;
-				background: rgba(0,0,0, 0.5);
-				color: #fff;
-				-webkit-border-radius: 7px;
-				border-radius: 7px;
-			}
-			#menu2 li.active{
-				color: #000;
-				background:#fff;
-				background: rgba(255,255,255, 0.5);
-			}
-			#menu2 li a{
-				text-decoration:none;
-				color: #fff;
-			}
-			#menu2 li.active a:hover{
-				color: #000;
-			}
-			#menu2 li:hover{
-				background: rgba(255,255,255, 0.8);
-			}
-			#menu2 li a,
-			#menu2 li.active a{
-				padding: 7px 20px;
-				display:block;
-			}
-			#menu2 li.active a{
-				color: #fff;
-			}
-			#menu2{
-				position: relative;
-/*				padding-bottom: 10px;*/
-/*				z-index:10;*/
-				padding-right:5%;
-				margin:-1%;
-				text-align: right;
-			}
-			/*    MENU ENDED    */
-			#logo{
-				position: fixed;
-				display: block;
-				height: 200px;
-                width: 200px;
-                left: 16%;
-                top: 37%;
-			}
-			#headerImage
-			{
-				position: fixed;
-				display: block;
-				height: 150px;
-				top:40%;
-				width: 800px;
-                left: 24%;
-			}
-			#header{
-				position: absolute;
-                height: 40px;
-				display:block;
-                top: 0px;
-				width: 100%;
-				background: #000;
-                opacity: 0.6;
-				z-index:9;
-				text-align:left;
-				color: #FFFFFF;
-                padding: 10px 0 0 10px;
-            }
-            #footer{
-                position: absolute;
-                height: 60px;
-                display:block;
-                bottom: 0px;
-                width: 100%;
-                background: #000;
-                opacity: 0.7;
-                text-align:center;
-                color: #000;
-                padding: 0 0 0 0;
-			}
-
-			/* Section 0
-			* --------------------------------------- */
-			@font-face{
-				font-family:Perpetua;
-				src:url('perpetua.ttf');
-			}
-
-			#section0{
-				padding: 0px 0;
-				overflow: hidden;
-				/*				background-image: url(imgs/temp.png);*/
-				margin: 0px 0 0 0;
-				background-size: 100% 100%;
-			}
-
-
-			#section0 .layer{
-				position: absolute;
-				z-index: 4;
-				width: 100%;
-				left: 0;
-				top: 70%;
-			}
-            #myVideo{
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-
-            }
-/*
-            .videosection{
-             position: relative;
-            padding-bottom: 56%;
-                height: 0;
-            }
-*/
-			/* Section 1
-			* --------------------------------------- */
-			#section1{
-
-                background-image: url(imgs/back5.jpg);
-				background-size: 100% 100%;
-				padding: 0px 0px;
-				overflow: hidden;
-				height: 100%;
-			}
-			#section1 img{
-				position:absolute;
-				left: 40px;
-				top: 100px;
-			}
-			#section1 .box{
-                margin-top:50px;
-				width: 100%;
-				z-index: 1;
-			}
-
-			#section1 .box h2{
-				margin-left:auto;
-				margin-right:auto;
-			}
-
-			#section1 a{
-				position:absolute;
-				left: 0px;
-				top: 0px;
-				display: block;
-				width:100%;
-				height:100%;
-			}
-
-			#section1 .overlay {
-				z-index: 2;
-				opacity: 1;
-				display: block;
-				position: absolute;
-				left: 0px;
-				top: 0px;
-				width:100%;
-				height:100%
-			}
-
-			#section1 .container{
-				display: block;
-				position: absolute;
-				z-index: 1;
-				opacity: 1;
-				width:15%;
-				height:200px;
-				overflow: hidden;
-			}
-
-			#section1 .container img{
-				position:absolute;
-				z-index: 1;
-			}
-			#section1 .bottomContainers{
-				position: absolute;
-				display: block;
-            height:100%;
-				width:100%;
-            top:30%;
-            text-align: center;
-				-webkit-transition: all 0.4
-					s ease-out;
-				-moz-transition: all 0.4s ease-out;
-				-o-transition: all 0.4s ease-out;
-				transition: all 0.4s ease-out;
-
-			}
-			#section1 .fashion{
-				left:31%;
-            top:30%;
-				-webkit-border-radius: 10px;
-				border-radius: 10px;
-			}
-			#section1 .automotive{
-				left:54%;
-            top:30%;
-				-webkit-border-radius: 10px;
-				border-radius: 10px;
-			}
-			#section1 .medical{
-				left:77%;
-            top:30%;
-				-webkit-border-radius: 10px;
-				border-radius: 10px;
-			}
-
-			#section1 .interiorDesign{
-				left:8%;
-            top:30%;
-				-webkit-border-radius: 10px;
-				border-radius: 10px;
-			}
-
-			#section1 .bottomContainers.active{
-				-webkit-transform: translate3d(0px, -100px, 0px);
-				-moz-transform: translate3d(0px, -100px%, 0px);
-				-ms-transform:translate3d(0px, -100px, 0px);
-				transform: translate3d(0px, -100px, 0px);
-			}
-			#section1 img{
-				height: 100%;
-				width: 100%;
-				position: absolute;
-				left: 0px;
-				top: 0px;
-
-				-webkit-border-radius: 10px;
-				border-radius: 10px;
-				box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-				-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-				-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-			}
-			/*screen resolutions between 620px and 800px*/
-			@media all and (min-width: 620px) and (max-width: 800px){
-				#section1 .imgsContainer{
-					margin-top: -278px;
-					margin-left: -685px;
-					width: 647px;
-					height: 563px;
-				}
-			}
-			screen resolutions lower than 620px
-			@media all and (max-width: 620px){
-				#section1 .imgsContainer{
-					margin-top: -208px;
-					margin-left: -516px;
-					width: 534px;
-					height: 464px;
-				}
-			}
-
-			#section2 .imgsContainer{
-				position: absolute;
-				width:100%;
-				height:100%;
-			}
-
-			#section2 .imgsContainer div{
-				background-color:transparent;
-				color: #D6EBFF;
-				text-align: center;
-				font-size:20px;
-			}
-
-			#section2 .line{
-				border-bottom: thick solid #D6EBFF;
-			}
-
-			.modalBackground{
-				position:absolute;
-				left:0px;
-				top:0px;
-				height:100%;
-				width:100%;
-				z-index:0;
-			}
-
-			.modalMouseOver{
+        .modalMouseOver{
 				position:absolute;
 				left:0px;
 				top:0px;
@@ -364,7 +27,12 @@
 				z-index:2;
 			}
 
-			.modalOverlay{
+			.modalMouseOver:hover
+			{
+				opacity: 1;
+			}
+
+            .modalOverlay{
 				position:absolute;
 				width:100%;
 				height:100%;
@@ -373,7 +41,16 @@
 				z-index:1;
 			}
 
-			.modalDescription{
+            .modalBackground{
+				position:absolute;
+				left:0px;
+				top:0px;
+				height:100%;
+				width:100%;
+				z-index:0;
+			}
+
+            .modalDescription{
 				position: absolute;
 				width:100%;
 				height:60px;
@@ -384,919 +61,354 @@
 				opacity: 0;
 				z-index: 3;
 			}
-
-
 			.modal{
-				width:1000px;
-				height:500px;
-			}
-
-			.medicalPages{
-				position:relative;
-				width:2000px;
-				height:100%;
-				left:0px;
-			}
-
-			.medicalPage{
-				height: 100%;
-				width: 1000px;
-				position:absolute;
-				top:0px;
-				left:0px;
-				z-index:0;
-			}
-
-			.medicalPageImage{
-				width:1000px;
-				height:500px;
-				z-index:0;
-			}
-
-			.medicalPage#rightPage{
-				left:1000px;
-			}
-
-			.medicalPage .modalDescription{
-				opacity: 1;
-			}
-
-			.medicalPage .modalOverlay{
-				width:1000px;
-				height:60px;
-				bottom:0px;
-				left:0px;
-				opacity:0.5;
-				z-index:1;
-			}
-
-			#loadingCircle{
-				position:absolute;
-				left:11.1%;
-				top:16.2%;
-				z-index:2;
-				display:block;
-			}
-
-			.circle{
-				border-radius: 100%;
-				background-color: transparent;
-				border: 3px solid #AAA;
-			}
-
-			#shirtCircle{
-				position:absolute;
-				left:24%;
-				top:16.5%;
-				width:52%;
-				height:50%;
-				z-index:2;
-				display:block;
-				opacity:0;
-			}
-
-			#girl{
-				position:absolute;
-				height:100%;
-				width:47.5%;
-				z-index:0;
-				display:block;
-			}
-
-			#shirt{
-				position:absolute;
-				z-index:1;
-				height:100%;
-				width:47.5%;
-				opacity:0;
-				display:block;
-			}
-
-			#shirt img{
-				height:100%;
-				width:100%;
-				z-index:0;
-			}
-
-			#cart{
-				position:absolute;
-                z-index: 4;
-				width:40%;
-				height:60%;
-				display:block;
-			}
-
-			#fashionText{
-				position:absolute;
-				color: #AAA;
-				z-index:4;
-				font-size:50px;
-				left:40%;
-				width:60%;
-				top:10%;
-				display:block;
-			}
-
-			#couchText{
-				position:absolute;
-				z-index:4;
-				font-size:20px;
-				left:75%;
-				width:20%;
-				top:60%;
-				display:block;
-			}
-
-			#clockText{
-				position:absolute;
-				z-index:4;
-				font-size:20px;
-				left: 15%;
-				width:40%;
-				top:30%;
-				display:block;
-			}
-
-			/* Section 2
-			* --------------------------------------- */
-			#section2{
-				background-image: url(imgs/neural.jpg);
-				background-size: 50% 70%;
-				background-repeat: no-repeat;
-				background-position: center;
-
-			}
-            #text{
-                position: absolute;
-                top: 72%;
-                left: 50%;
-                width: 50%;
-            }
-			#section2 .box{
-				position: absolute;
-				height: 100%;
-                width: 100%;
-			}
-
-			.brainText{
-				position: absolute;
-                text-shadow:2px 2px 16px #000;
-				z-index: 9999;
-			}
-
-			#brain1{
-				top: 20%;
-				left: 0%;
-			}
-			#brain2{
-                top: 45%;
-                left: 0%;
-			}
-			#brain3{
-                top: 73%;
-                left: 7%;
-
-			}
-			#brain4{
-				top:45%;
-                left:85%;
-			}
-
-			#brain5{
-				top: 20%;
-				left: 85%;
-			}
-
-			.modal{
-				width:1000px;
-				height:500px;
-			}
-			/* Section 3
-			* --------------------------------------- */
-
-			#section3{
-				background-image: url(imgs/ca.jpg);
-				background-size: 100% 100%;
-			}
-			#section3 .box{
-				text-align: center;
-				margin: 10% 0 0 0;
-			}
-
-			#section4 .signupbox {
-
-				margin:0;
-				text-align: left;
-				top: 28%;
-				left: 0%;
-				position: relative;
-				width: 582px;
-			}
-            #section4 .title{
-                color: floralwhite;
-                font-size: 14pt;            }
-            #signupbox2{
-                margin:0;
-				text-align: left;
-				top: 33%;
-				left: 0%;
-				position: relative;
-				width: 582px;
-            }
-            #emailbox{
-                margin:0;
-				text-align: center;
-				top: 43%;
-				left: -10%;
-				position: relative;
-				width: 582px;
-                color: floralwhite;
-                font-size: 16pt;
-
-            }
-            #emailbutton{
-                background-image: url("imgs/redemail.png");
-            }
-			.inputWithButton{
-				display:inline-block;
-				/*    overflow:hidden;*/
-				border-radius: 3px;
-				margin-top: 8px;
-				margin-left: 0;
-			}
-			.inputWithButton > *{
-				vertical-align:top;
-				border:0;
-				margin:0;
-				padding: 13px 10px;
-			}
-			.inputWithButton > input[type=email]{
-				width:300px;
-				border:1px solid #444;
-				/*    border-right:none;*/
-			}
-			.inputWithButton > input[type=submit]{
-				border-left:1px solid gray;
-				background:#A30000;
-				border:1px solid #A30000;
-				color:#fff;
-				cursor:pointer;
-				width:70px;
-                padding: 14px;
-/*                background: url(imgs/redemail.png) no-repeat center center;*/
-			}
-
-
-			/* Section 4
-			* --------------------------------------- */
-			#section4{
-				margin: 0px 0 0 0;
-				background-size: 100% 100%;
-				background-image: url(imgs/comm.jpg);
-			}
-			#section4 .transbox
-			{
-				margin: 0px;
-				/*            background-color: ;*/
-/*				            opacity:0.7;*/
-				/*            filter:alpha(opacity=60);  For IE8 and earlier */
-				text-align: center;
-				top: 50%;
-				left: 53%;
-				position: absolute;
-				width: 500px;
-			}
-
-			#address
-			{
-				margin: 5%;
-				font-weight: bold;
-				color: #000000;
-			}
-
-			/*
-			#section4 .signupbox {
-			width:305px;
-			margin:0;
-			text-align: center;
-			top: 25%;
-			left: 25%;
-			position: absolute;
-			width: 582px;
-
-			}
-			*/
-
-			/* Nicely lines up the labels. */
-			#section4 .form label {display:inline-block; width:500px;}
-
-			/* You could add a class to all the input boxes instead,
-			if you like. That would be safer, and more backwards-compatible */
-			#section4 .form input[type="email"],
-			#section4 .form input[type="password"],
-			#section4 .form input[type="username"] {width:400px;border-style: inset;}
-			/*            input[type=text]{ -webkit-border-radius: 5px; border-radius: 5px;}*/
-			form .line {clear:both;}
-			form .line.submit {text-align:right; width: 400px;}
-			input[type=submit] {padding:1px 1px; background:skyblue; border:0 none; cursor:pointer;
-				color: white; width: 54%;
-				-webkit-border-radius: 5px; border-radius: 5px; }
-
-
-			/* Overwriting fullPage.js tooltip color
-			* --------------------------------------- */
-			.fp-tooltip{
-				color: #AAA;
-			}
-			#fp-nav span, .fp-slidesNav span{
-				border-color: #AAA;
-			}
-			#fp-nav li .active span, .fp-slidesNav .active span{
-				background: #AAA;
-			}
-
-
-		</style>
-
-		<!--[if IE]>
-<script type="text/javascript">
-var console = { log: function() {} };
-</script>
-<![endif]-->
-
-
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-		<script type="text/javascript" src="fancyapps-fancyBox-18d1712/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-		<script src="circle-progress.js"></script>
-		<script src="jquery.line.js"></script>
-
-		<script type="text/javascript" src="jquery.fullPage.js"></script>
-		<script type="text/javascript" src="examples.js"></script>
-
-
-		<script type="text/javascript">
-			$(document).ready(function() {
-
-				$('.container').height($('.container').width());
-
-				var medicalInterval;
-				var interiorDesignInterval;
-				var automotiveInterval;
-
-				$(".interiorDesign .fancybox").fancybox({
-					fitToView: true,
-					width: '90%',
-					height: '90%',
-					scrolling: 'no',
-					afterLoad: function(){
-						var normalInteriorBackground = "imgs/temp/interiordesign.jpg";
-						var outlineInteriorBackground = "imgs/temp/interiordesignfixed.jpg" ;
-						var couchFactor = 1.25;
-						var clockFactor = 1.5;
-						var couchWidth, couchHeight, couchLeft, couchTop;
-						var clockWidth, clockHeight, clockLeft, clockTop;
-
-						function swapBackground(){
-							if ($('.modalBackground').attr('src') == normalInteriorBackground){
-								$('.modalBackground').attr('src', outlineInteriorBackground);
-							}
-							else{
-								$('.modalBackground').attr('src', normalInteriorBackground)
-							}
-						}
-
-						$('.modalBackground').attr('src', outlineInteriorBackground);
-						interiorDesignInterval = setInterval(swapBackground, 400);
-
-
-						//Positioning and sizing the couch
-						$('.modalMouseOver#couch').width(couchWidth = $('#interiorDesignModal').width()*0.56);
-						$('.modalMouseOver#couch').height(couchHeight = $('#interiorDesignModal').height()*0.32);
-						$('.modalMouseOver#couch').css('left', couchLeft = $('#interiorDesignModal').width()*0.1);
-						$('.modalMouseOver#couch').css('top',couchTop = $('#interiorDesignModal').height()*0.525);
-
-						$('.modalMouseOver#clock').width(clockWidth = $('#interiorDesignModal').width()*0.074);
-						$('.modalMouseOver#clock').height(clockHeight = $('#interiorDesignModal').height()*0.115);
-						$('.modalMouseOver#clock').css('left', clockLeft = $('#interiorDesignModal').width()*0.677);
-						$('.modalMouseOver#clock').css('top',clockTop = $('#interiorDesignModal').height()*0.325);
-
-
-						function expandCouch(){
-							$('.modalMouseOver#couch').stop().css('opacity',1);
-							$('#couchText').stop().animate({opacity:1},'fast');
-							$('#interiorDesignModal .modalOverlay').stop().animate({opacity:0.5}, 'fast');
-							$('.modalMouseOver#couch').stop().animate({
-								width: couchWidth*couchFactor,
-								height: couchHeight*couchFactor,
-								left : couchLeft + couchWidth*(1-couchFactor)/2,
-								top : couchTop + couchHeight*(1-couchFactor)/2,
-							});
-						}
-
-						function expandClock(){
-							$('.modalMouseOver#clock').stop().css('opacity',1);
-							$('#clockText').stop().animate({opacity:1},'fast');
-							$('#interiorDesignModal .modalOverlay').stop().animate({opacity:0.5}, 'fast');
-							$('.modalMouseOver#clock').stop().animate({
-								width: clockWidth*clockFactor,
-								height: clockHeight*clockFactor,
-								left : clockLeft + clockWidth*(1-clockFactor)/2,
-								top : clockTop + clockHeight*(1-clockFactor)/2,
-							});
-						}
-
-						function collapseCouch(){
-							$('#interiorDesignModal .modalOverlay').stop().animate({opacity:0}, 'fast');
-							$('#couchText').stop().animate({opacity:0},'fast');
-							$('.modalMouseOver#couch').stop().animate({
-								width: couchWidth+"px",
-								height: couchHeight+"px",
-								left : couchLeft+"px",
-								top : couchTop+"px"
-							}, function(){
-								$('.modalMouseOver#couch').stop().css('opacity','0');
-							});
-						}
-
-						function collapseClock(){
-							$('#interiorDesignModal .modalOverlay').stop().animate({opacity:0}, 'fast');
-							$('#clockText').stop().animate({opacity:0},'fast');
-							$('.modalMouseOver#clock').stop().animate({
-								width: clockWidth+"px",
-								height: clockHeight+"px",
-								left : clockLeft+"px",
-								top : clockTop+"px"
-							}, function(){
-								$('.modalMouseOver#clock').stop().css('opacity','0');
-							});
-						}
-                        
-                                                        setTimeout(function(){
-						$('.modalMouseOver#couch').hover(
-							function(){
-								clearInterval(interiorDesignInterval);
-								$('.modalBackground').attr('src', normalInteriorBackground);
-								expandCouch();
-							},
-							function(){
-								collapseCouch();
-							});
-
-						$('.modalMouseOver#clock').hover(
-							function(){
-								clearInterval(interiorDesignInterval);
-								$('.modalBackground').attr('src', normalInteriorBackground);
-								expandClock();
-							},
-							function(){
-								collapseClock();
-							});
-							 },1200);
-
-
-					},
-
-					afterClose: function(){
-						clearInterval(interiorDesignInterval);
-					}
-				});
-
-				$('.automotive .fancybox').fancybox({
-					fitToView: true,
-					width: '90%',
-					height: '90%',
-					scrolling: 'no',
-					afterLoad: function(){
-						var normalAutoBackground = "imgs/temp/automobile.jpg";
-						var outlineAutoBackground = "imgs/temp/automobilefixed.jpg" ;
-
-						function swapAutoBackground(){
-							if ($('.modalBackground').attr('src') == normalAutoBackground){
-								$('.modalBackground').attr('src', outlineAutoBackground);
-							}
-							else{
-								$('.modalBackground').attr('src', normalAutoBackground)
-							}
-						}
-
-						$('.modalBackground').attr('src', outlineAutoBackground);
-						automotiveInterval = setInterval(swapAutoBackground, 400);
-
-
-						//Positioning and sizing the engine specs
-						$('#engineSpecs').width($('#automotiveModal').height()*0.7);
-						$('#engineSpecs').height($('#automotiveModal').height()*0.7);
-						$('#engineSpecs').css('left', $('#automotiveModal').width()*0.05);
-						$('#engineSpecs').css('top', $('#automotiveModal').width()*0.05);
-
-						//Positioning and sizing the engine
-						$('.modalMouseOver#engine').width($('#automotiveModal').width()*0.26);
-						$('.modalMouseOver#engine').height($('#automotiveModal').height()*0.2);
-						$('.modalMouseOver#engine').css('left',$('#automotiveModal').width()*0.4);
-						$('.modalMouseOver#engine').css('top',$('#automotiveModal').height()*0.45);
-
-						function showSpecs(){
-							$('#automotiveModal .modalOverlay').stop().animate({opacity:0.5}, 'fast');
-							$('#automotiveModal .modalDescription').stop().animate({opacity:1},'fast');
-						}
-
-						function hideSpecs(){
-							$('#automotiveModal .modalOverlay').stop().animate({opacity:0}, 'fast');
-							$('#automotiveModal .modalDescription').stop().animate({opacity:0},'fast');
-						}
-                                                    setTimeout(function(){
-
-						$('.modalMouseOver#engine').hover(
-							function(){
-								clearInterval(automotiveInterval);
-								$('.modalBackground').attr('src', normalAutoBackground);
-								showSpecs();
-							},
-							function(){
-								hideSpecs();
-							});
-                                                               },1200);
-					},
-
-					afterClose: function(){
-						clearInterval(automotiveInterval);
-					}
-				});
-
-				$('.medical .fancybox').fancybox({
-					fitToView: true,
-					width: '90%',
-					height: '90%',
-					scrolling: 'no',
-					afterLoad: function(){
-						function toggleMedical(){
-							var newLeft = '-1000px';
-							if ($('.medicalPages').css('left') == '-1000px'){
-								newLeft = '0px';
-							}
-							$('.medicalPages').animate({left:newLeft}, 'slow');
-						}
-						medicalInterval = setInterval(toggleMedical,3000);
-					},
-
-					afterClose: function(){
-						clearInterval(medicalInterval);
-					}
-				});
-
-				$('.fashion .fancybox').fancybox({
-					fitToView: true,
-					width: '90%',
-					height: '90%',
-					scrolling: 'no',
-					afterLoad: function(){
-						$('#cart').css('left','55%');
-						$('#cart').css('top','120%');
-						$('#loadingCircle').css('opacity',0)
-						$('#shirtCircle').css('opacity',0);
-						$('#shirt').css('opacity',1);
-						$('#shirt').css('left',0);
-						$('#shirt').css('top',0);
-						$('#shirt').css('width','47.5%');
-						$('#shirt').css('height','100%');
-						$('#fashionText').css('opacity',0);
-						setTimeout(function(){
-							$('#loadingCircle').css('opacity',1);
-							var thick = 3;
-							var circleWidth = $('#shirt').width()*0.55;
-							var circleHeight = $('#shirt').height()*0.52;
-							$('#loadingCircle').circleProgress({
-								value: 1,
-								sizeX: circleWidth,
-								sizeY: circleHeight,
-								thickness: thick,
-								emptyFill: 'rgba(0,0,0,0)',
-								fill: {color: "#AAA"}
-							});
-						},1000);
-					}
-				});
-
-				$('#loadingCircle').on('circle-animation-end', function(event){
-					$('#shirt').css('opacity',1);
-					$('#loadingCircle').css('opacity',0);
-					$('#shirtCircle').css('opacity',1);
-					$('#shirt').animate({left:'60%',width:'25%',height:'50%',top:'25%'},'slow');
-					$('#cart').animate({top:'40%'}, 'slow');
-					$('#shirt').animate({top:'40%'}, 'slow', function(){
-						$('#fashionText').animate({opacity:1});
-					});
-				});
-
-				$('.overlay').hover(
-					function(){
-						$(this).stop().animate({top:-200});
-					},
-					function(){
-					});
-
-				$('.container').hover(
-					function(){
-						$(this).find('.overlay').stop().animate({top:-200});
-					},
-					function(){
-						$(this).find('.overlay').stop().animate({top:0});
-					});
-
-				$('#fullpage').fullpage({
-					'verticalCentered': false,
-					'css3': true,
-					'sectionsColor': ['#000', '#000', '#000', '#9B785C', '#000'],
-					'navigation': true,
-					'navigationPosition': 'right',
-					'navigationTooltips': ['1', '2', '3', '4', '5'],
-
-					'afterLoad': function(anchorLink, index){
-						if(index == 2){
-							$('#section1 .bottomContainers').addClass('active');
-						}
-					},
-
-					'onLeave': function(index, nextIndex, direction){
-						if (index == 1 && direction == 'down'){
-                            $('#logo').animate({height:'40px', width:'40px', top:'5px', left:'30px'}, 300);
-                            $('#headerImage').animate({height:'30px',width:'150px', top:'10px',left:'55px'}, 300);
-							$('#header').animate({top:'0px'});
-						}
-						else if (nextIndex == 1 && direction == 'up'){
-                            $('#logo').animate({height:'200px', width:'200px', top:'37%', left:'16%'}, 300);
-                            $('#headerImage').animate({height:'150px',width:'800px', top:'40%',left:'24%'}, 300);
-                            $('#header').animate({top:'0px'});
-						}
-
-                      
-						//Enter RnD
-						if (nextIndex == 3){
-                            $('.brainText').hide();
-                            function showBrainText(index){
-                            if (index == 6)
-                                return;
-                            $('#brain'+index).fadeIn();
-                            setTimeout(function(){showBrainText(index+1);},300);
-                                }
-                            showBrainText(0);
-
-						}
-
-						//Leave RnD
-						if (index == 3){
-                            $('.brainText').fadeOut();
-						}
-
-						//Leave 2nd Page
-						if (index == 2){
-							$.fancybox.close();
-						}
-					},
-
-					afterRender: function(){
-						//playing the video
-						$('video').get(0).play();
-					},
-					anchors: ['Home', 'SneakPeak', 'ResearchDevelopment', 'ContactUs' ],
-					menu: '#menu2',
-					easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1)'
-//					easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)'
-				});
-			});
-		</script>
-
+	width:1000px;
+	height:500px;
+}
+	.fashionHolder
+	{
+		min-width: 2%;
+		min-height: 20px;
+		top: 40px;
+		left: 5%;
+
+	}
+
+        </style>
 	</head>
 	<body>
-		<!--
-<div id = "blockmenu">
-</div>
--->
 
-
-
-		<div id="header">
-			<a href="#Home"><img src="imgs/logotransparent.png" alt="logo" id = "logo"/></a>
-			<a href="#Home"><img src="imgs/deepvisioncolor.png" alt="headerImage" id = "headerImage"/></a>
-
-			<ul id="menu2">
-				<li data-menuanchor= "Home"><a href="#Home">Home</a></li>
-				<li data-menuanchor= "SneakPeak"><a href="#SneakPeak">Sneak Peek</a></li>
-				<li data-menuanchor= "ResearchDevelopment"><a href="#ResearchDevelopment">Research &amp; Development</a></li>
-				<li data-menuanchor= "ContactUs"><a href="#ContactUs">Contact</a></li>
-<!--				<li data-menuanchor= "5thPage"><a href="#5thPage">Contact</a></li>	  	    -->
-			</ul>
-			<!--	<a href="#Home"><img src="imgs/templogo.png" alt="logo" id = "logo"/></a>-->
-		</div>
-
-		<!--<div id="footer"> Copyright © FreshXLabs.Inc</div>-->
-
-		<div id="fullpage">
-			<!--
-<div id="staticImg">
-<div class="imgsContainer">
-</div>
-</div>
--->
-
-			<div class="section" id="section0">
-                <div class="videosection">
-				<video autoplay loop muted id="myVideo">
-					<source src="imgs/Fireflies%20%20%20FREE%20Video%20Background%20Loop%20HD%201080p.mp4" type="video/mp4">
-					<source src="imgs/Fireflies%20%20%20FREE%20Video%20Background%20Loop%20HD%201080p.mp4" type="video/webm">
-				</video>
-                </div>
+		<!-- Header -->
+			<div id="header">
+				<!-- <span class="logo icon fa-paper-plane-o"></span> -->
+				<span><img id="" width="200" src="images/logotransparent.png" /></span>
+				<h1>DeepVision</h1>
+				<p>We help computers see...
+				<!--
+				<br />
+				and released for free under the <a href="http://html5up.net/license">Creative Commons license</a>.
+				-->
+				</p>
 			</div>
 
-			<div class="section" id="section1">
-				<div class="wrap">
+		<!-- Main -->
+			<div id="main">
 
-<!--
-				<video autoplay loop muted  id="myVideo">
-						<source src="imgs/Fireflies%20%20%20FREE%20Video%20Background%20Loop%20HD%201080p.mp4" type="video/mp4">
-						<source src="imgs/Fireflies%20%20%20FREE%20Video%20Background%20Loop%20HD%201080p.mp4" type="video/webm">
-					</video>
--->
-					<div class="bottomContainers">
-						<div class="container interiorDesign">
-							<a href="#interiorDesignModal" class="fancybox">
-								<img src="imgs/interiordesign.jpg" alt="iphone"/>
-							</a>
-							<div class="overlay">
-								<a href="#interiorDesignModal" class="fancybox">
-									<img src="imgs/hoverid.png" alt="iphone"/>
-								</a>
+				<header class="major container 75%">
+					<h2>Pushing the limits
+					<br />
+					of Computer Vision
+					<!--
+					<br />
+					computer vision
+					-->
+					</h2>
+					<!--
+					<p>Tellus erat mauris ipsum fermentum<br />
+					etiam vivamus nunc nibh morbi.</p>
+					-->
+				</header>
+
+				<div class="box alt container">
+					<section class="feature left">
+						<a href="#" class="image">
+							<img src="images/pic01.png" alt="" style="width: 100%;"/>
+						</a>
+						<img class="modalMouseOver" src="images/glassesOverlay.png" style="width: 8%; height: 7%; top: 15%; left:18%;" onmouseover="showGlasses(this)" onmouseout="offGlasses(this)">
+						<img class="modalMouseOver" src="images/jacketOverlay.png" style="width: 7.5%; height: 70%; top: 30%; left:11%;"onmouseover="showJacketLeft(this)" onmouseout="offJacketLeft(this)">
+						<img class="modalMouseOver" src="images/jacketOverlay.png" style="width: 6%; height: 68%; top: 32%; left:22.5%;"onmouseover="showJacketRight(this)" onmouseout="offJacketRight(this)">
+						<div class="content">
+							<h3>Revolutionize Advertising</h3>
+							<p>Embed advertisements into your content seamlessly. Allow users to immediately interact with the products they discover.</p>
+						</div>
+					</section>
+					<section class="feature right">
+						<a href="#" class="image"><img src="images/pic02.jpg" alt=""style="width: 100%;"  /></a>
+						<div class="content">
+							<h3>Enterprise Image Processing Software</h3>
+							<p>End-to-end software solutions for image analysis in your industry.</p>
+						</div>
+					</section>
+					<section class="feature left">
+						<a href="#" class="image"><img src="images/pic03.jpg" style="width: 100%;"  alt="" /></a>
+						<div class="content">
+							<h3>Research and Development</h3>
+							<p>Fueling innovative products through synergizing research in image segmentation, deep learning, stochastic models, Bayesin statistics, and image classification.</p>
+						</div>
+					</section>
+				</div>
+
+				<!--
+				<div class="box container">
+					<header>
+						<h2>A lot of generic stuff</h2>
+					</header>
+					<section>
+						<header>
+							<h3>Paragraph</h3>
+							<p>This is the subtitle for this particular heading</p>
+						</header>
+						<p>Phasellus nisl nisl, varius id <sup>porttitor sed pellentesque</sup> ac orci. Pellentesque
+						habitant <strong>strong</strong> tristique <b>bold</b> et netus <i>italic</i> malesuada <em>emphasized</em> ac turpis egestas. Morbi
+						leo suscipit ut. Praesent <sub>id turpis vitae</sub> turpis pretium ultricies. Vestibulum sit
+						amet risus elit.</p>
+					</section>
+					<section>
+						<header>
+							<h3>Blockquote</h3>
+						</header>
+						<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget.
+						tempus euismod. Vestibulum ante ipsum primis in faucibus.</blockquote>
+					</section>
+					<section>7
+						<header>
+							<h3>Divider</h3>
+						</header>
+						<p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra
+						ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
+						facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
+						tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+						posuere cubilia.</p>
+						<hr />
+						<p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra
+						ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
+						facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
+						tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+						posuere cubilia.</p>
+					</section>
+					<section>
+						<header>
+							<h3>Unordered List</h3>
+						</header>
+						<ul class="default">
+							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+						</ul>
+					</section>
+					<section>
+						<header>
+							<h3>Ordered List</h3>
+						</header>
+						<ol class="default">
+							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+						</ol>
+					</section>
+					<section>
+						<header>
+							<h3>Table</h3>
+						</header>
+						<div class="table-wrapper">
+							<table class="default">
+								<thead>
+									<tr>
+										<th>ID</th>
+										<th>Name</th>
+										<th>Description</th>
+										<th>Price</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>45815</td>
+										<td>Something</td>
+										<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>24524</td>
+										<td>Nothing</td>
+										<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>45815</td>
+										<td>Something</td>
+										<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>24524</td>
+										<td>Nothing</td>
+										<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
+										<td>19.99</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td colspan="3"></td>
+										<td>100.00</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+					</section>
+					<section>
+						<header>
+							<h3>Form</h3>
+						</header>
+						<form method="post" action="#">
+							<div class="row">
+								<div class="6u 12u(mobilep)">
+									<label for="name">Name</label>
+									<input class="text" type="text" name="name" id="name" value="" placeholder="John Doe" />
+								</div>
+								<div class="6u 12u(mobilep)">
+									<label for="email">Email</label>
+									<input class="text" type="text" name="email" id="email" value="" placeholder="johndoe@domain.tld" />
+								</div>
+							</div>
+							<div class="row">
+								<div class="12u">
+									<label for="subject">Subject</label>
+									<input class="text" type="text" name="subject" id="subject" value="" placeholder="Enter your subject" />
+								</div>
+							</div>
+							<div class="row">
+								<div class="12u">
+									<label for="subject">Message</label>
+									<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+								</div>
+							</div>
+							<div class="row">
+								<div class="12u">
+									<ul class="actions">
+										<li><input type="submit" value="Send" /></li>
+										<li><input type="reset" value="Reset" class="alt" /></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</section>
+				</div>
+				-->
+
+				<footer class="major container 75%">
+					<h3>API Beta Tester Waiting List</h3>
+					<p>Our exclusive API lets you upload products to our database so that anyone can tag your products in their images. Sign up below to join our list of API beta testers and hyperdrive your traction!</p>
+
+					<form method="POST" action="http://formspree.io/contact@deepvision.co">
+						<input type="hidden" name="subject" value="API Beta Test Sign Up" />
+						<ul class="actions">
+							<li><input type="email" name="email" placeholder="Email" /></li>
+							<li><input type="submit" id="signupbutton" value="Sign Up" /></li>
+						</ul>
+					</form>
+
+				</footer>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+				<div class="container 75%">
+
+					<header class="major last">
+						<h2>Questions, comments, or want more information?</h2>
+					</header>
+
+					<p>Email any general or press inquiries to <a href="mailto:contact@deepvision.co">contact@deepvision.co</a> , or just use the form below.</p>
+
+					<form method="POST" action="http://formspree.io/contact@deepvision.co">
+					<input type="hidden" name="subject" value="General Inquiry" />
+						<div class="row">
+							<div class="6u 12u(mobilep)">
+								<input type="text" name="name" placeholder="Name" />
+							</div>
+							<div class="6u 12u(mobilep)">
+								<input type="email" name="email" placeholder="Email" />
 							</div>
 						</div>
-
-						<div class="container fashion">
-							<a href="#fashionModal" class="fancybox">
-								<img src="imgs/fashion2.png" alt="iphone"/>
-							</a>
-							<div class="overlay">
-								<a href="#fashionModal" class="fancybox">
-									<img src="imgs/hoverfashion.png" alt="iphone"/>
-								</a>
+						<div class="row">
+							<div class="12u">
+								<textarea name="message" placeholder="Message" rows="6"></textarea>
 							</div>
 						</div>
-
-						<div class="container automotive">
-							<a href="#automotiveModal" class="fancybox">
-								<img src="imgs/automobile.jpg" alt="iphone"/>
-							</a>
-							<div class="overlay">
-								<a href="#automotiveModal" class="fancybox">
-									<img src="imgs/hoverauto.png" alt="iphone"/>
-								</a>
+						<div class="row">
+							<div class="12u">
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
 							</div>
 						</div>
-						<div class="container medical">
-							<a href="#medicalModal" class="fancybox">
-								<img src="imgs/medicalcollaborate.jpg" alt="iphone"/>
-							</a>
-							<div class="overlay">
-								<a href="#medicalModal" class="fancybox">
-									<img src="imgs/med2.png" alt="iphone" id="overlayMedical" />
-								</a>
-							</div>
-						</div>
+					</form>
 
+					<!-- <ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+					</ul> -->
 
-
-						<div class="box">
-                            <h2 style = "color: floralwhite; text-shadow: 2px 2px 16px #000;">
-								Take a <span style="color:#DAA520;font-family:Perpetua; font-size:110%">D<span style="font-size:90%">EEP</span></span>er look at these images...
-							</h2>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="section moveDown" id="section2">
-				<div class="wrap">
-                    <h2 id = "text" style = "color:#D6EBFF; font-size: 35pt; width:50%;">
-                        Constant R&amp;D<br>Fueling Innovative Products
-                    </h2>
-					<div class="box">
-					</div>
-
-					<div class="imgsContainer">
-						<div id="brain1" class="brainText" style="background-color:black">Image Segmentation</div>
-						<div id="brain2" class="brainText"style="background-color:black">Edge Detection</div>
-						<div id="brain3" class="brainText" style="background-color:black">Deep Learning</div>>
-						<div id="brain4" class="brainText" style="background-color:black">Image Classification</div>
-						<div id="brain5" class="brainText" style="background-color:black">Stochastic Models</div>
-					</div>
+					<ul class="copyright">
+						<li>&copy; DeepVision. All rights reserved.</li>
+					</ul>
 
 				</div>
 			</div>
 
-<!--
-			<div class="section moveDown" id="section3">
-				<div class="wrap">
-					<div class="box">
-						<h2 style = "color:#FFFFFF">Get an exclusive <br>preview of
-							DeepVision's <br>cutting edge
-							technology</h2>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+			<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+			<script src="circle-progress.js"></script>
+			<script src="jquery.line.js"></script>
 
-						<div class = signupbox>
-							<span class="inputWithButton" action="demo_form.asp" method="post">
-								<input type="text" placeholder="Your email"/>
-								<input type= "button" value = "Sign up"/>
-							</span>
-						</div>
-					</div>
-				</div>
+			<script type="text/javascript" src="jquery.fullPage.js"></script>
+			<script type="text/javascript" src="examples.js"></script>
 
-<div class="imgsContainer">
-<img src="imgs/ins5.png" alt="iphone" id="iphone-two" />
-</div>
+			<script>
+			function showGlasses(x) {
+				x.style.width = "50%";
+				x.style.height = "100%";
+				x.style.top = "0px";
+				x.style.left ="0px";
+			}
 
-			</div>
--->
+			function offGlasses(x) {
+				x.style.width = "8%";
+				x.style.height= "10%";
+				x.style.top = "15%";
+				x.style.left = "16%";
+			}
+			function showJacketLeft(x) {
+				x.style.width = "50%";
+				x.style.height = "100%";
+				x.style.top = "0px";
+				x.style.left ="0px";
+			}
 
-			<div class="section moveDown" id="section4">
-				<div class="wrap">
-					<div class="transbox">
+			function offJacketLeft(x) {
+				x.style.width = "7.5%";
+				x.style.height= "70%";
+				x.style.top = "30%";
+				x.style.left = "11%";
 
-<!--						<h2 style = "color:floralwhite"><b>Contact Us</b></h2>-->
-						<address id = "address" style = "color:floralwhite">
-							151 Charles Street West<br>
-							Kitchener, Ontario<br>
-							Canada, N2G 1H6<br>
-						</address>
+			}
+			function showJacketRight(x) {
+				x.style.width = "50%";
+				x.style.height = "100%";
+				x.style.top = "0px";
+				x.style.left ="0px";
+			}
 
-					</div>
-					<div class = signupbox>
-							<h3 class=title><b>Sign up to join our exclusive list of API beta testers:</b></h3>
-							<form class="inputWithButton" action="//formspree.io/api@deepvision.co"
-      method="POST">
-								<input type="email" placeholder="Your email" name="_replyto"/>
-								<input type= "submit" value = "Sign up"/>
-							</form>
-						</div>
+			function offJacketRight(x) {
+				x.style.width = "6%";
+				x.style.height= "68%";
+				x.style.top = "32%";
+				x.style.left = "22.5%";
 
-						<div id = "signupbox2">
-							<h3 class="title"><b>Stay in the loop with Deep Vision:</b></h3>
-							<form class="inputWithButton" action="//formspree.io/mailinglist@deepvision.co"
-      method="POST">
-								<input type="email" placeholder="Your email" name="_replyto"/>
-								<input type= "submit" value = "Sign up"/>
-							</form>
-						</div>
-						<div id = "emailbox">
-						        Get More Info<address style = "font-size: 13pt;"><b>Inquiries: </b>inquiries@deepvision.co<br>
-                               <b>Press: </b>press@deepvision.co</address>
-						</div>
+			}
 
-				</div>
-				<div id = "footer">
-                    <img src="imgs/logotransparent.png" style = "height:6%; width:4%; position: fixed; left:42%; margin-top:8px;"/>
-				    <img src="imgs/deepvisioncolor.png" style = "height:6%; width:17%; position: fixed; left:44%; margin-top:8px;"/>
-				</div>
-			</div>
-
-		</div>
-		<div style="display:none"><div id="interiorDesignModal" class="modal">
-			<img class="modalBackground" src="imgs/temp/interiordesignfixed.jpg"/>
-			<div class="modalOverlay"></div>
-			<img class="modalMouseOver" id="couch" src="imgs/popupSofa.png"/>
-			<div class="modalDescription" id="couchText">Fava III Sofa</div>
-			<div class="modalDescription" id="clockText">Artistic Round Frame Wall Clock, 12"</div>
-			<img class="modalMouseOver" id="clock" src="imgs/popupClock.png"/>
-			</div></div>
-		<div style="display:none"><div id="fashionModal" class="modal">
-			<img id="girl" src="imgs/fashion2.png"/>
-			<div id="shirt">
-				<img src="imgs/temp/boylondonshirt.png"/>
-				<div class="circle" id="shirtCircle"></div>
-			</div>
-			<img id="cart" src="imgs/temp/shoppingcart.png"/>
-			<div id="fashionText">Single Swipe Purchasing</div>
-			<div id="loadingCircle"></div>
-			</div></div>
-		<div style="display:none"><div id="automotiveModal" class="modal">
-			<img class="modalBackground" src="imgs/temp/automobilefixed.jpg"/>
-			<div class="modalOverlay"></div>
-			<img class="modalMouseOver" id="engine" src="imgs/temp/engine.jpg"/>
-			<img id="engineSpecs" class="modalDescription" src="imgs/temp/enginespecs.JPG"/>
-			<div class="modalDescription">Find out exactly what's under the hood!</div>
-			</div></div>
-		<div style="display:none"><div id="medicalModal" class="modal">
-			<div class="medicalPages">
-				<div class="medicalPage" id="leftPage">
-					<img class="medicalPageImage" src="imgs/temp/medicalcollaborate.jpg"/>
-					<div class="modalOverlay"></div>
-					<div class="modalDescription">Collaborate with other medical professionals</div>
-				</div>
-				<div class="medicalPage" id="rightPage">
-					<img class="medicalPageImage" src="imgs/temp/doctorwpatient.jpg"/>
-					<div class="modalOverlay"></div>
-					<div class="modalDescription">Interact with patients like never before</div>
-				</div>
-			</div>
-
-			</div></div>
+			</script>
 	</body>
 </html>
