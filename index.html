@@ -123,7 +123,8 @@
 						</div>
 					</section>
 					<section class="feature right">
-						<a href="#" class="image"><img src="images/pic02.jpg" alt=""style="width: 100%;"  /></a>
+						<a href="#" class="image"><img src="images/pic02.jpg" alt=""style="height: 100%;"  /></a>
+						<img class="modalMouseOver" src="images/brainOverlay.png" style="width: 8%; height: 16%; top: 31%; left:59%;" onmouseover="showBrain(this)" onmouseout="offBrain(this)">
 						<div class="content">
 							<h3>Enterprise Image Processing Software</h3>
 							<p>DeepVision offers end-to-end software solutions for ground-breaking image analysis in your industry.</p>
@@ -406,6 +407,20 @@
 				x.style.height= "68%";
 				x.style.top = "32%";
 				x.style.left = "22.5%";
+
+			}
+			function showBrain(x) {
+				x.style.width = "50%";
+				x.style.height = "100%";
+				x.style.top = "0px";
+				x.style.left ="50%";
+			}
+
+			function offBrain(x) {
+				x.style.width = "8%";
+				x.style.height= "16%";
+				x.style.top = "31%";
+				x.style.left = "59%";
 
 			}
 
