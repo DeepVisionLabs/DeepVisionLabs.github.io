@@ -3148,4 +3148,21 @@
 					display: none;
 				}
 
+        
 	}
+
+/* Image sensor */
+#gbr {
+    z-index: 0
+}
+#jacketleft:hover {
+        z-index: 1
+}
+
+#jacketright:hover {
+        z-index: 1
+}
+
+#glasses:hover {
+        z-index: 1
+}
