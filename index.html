@@ -75,6 +75,8 @@
 	}
 
         </style>
+        
+         <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 	</head>
 	<body>
 
@@ -112,7 +114,7 @@
 				<div class="box alt container">
 					<section class="feature left">
 						<a class="image"><img src="images/pic02.jpg" alt="" style="height: 100%;"  /></a>
-						<img class="modalMouseOver" src="images/brainOverlay.png" style="width: 8%; height: 16%; top: 31%; left:59%;" onmouseover="showBrain(this)" onmouseout="offBrain(this)">
+						<img class="modalMouseOver" id="brain" src="images/brainOverlay.png" style="width: 8%; height: 16%; top: 31%; left:9%;" onmouseover="showBrain(this)" onmouseout="offBrain(this)">
 						<div class="content">
 							<h3>Enterprise Image Processing Software</h3>
 							<p>DeepVision offers end-to-end software solutions for ground-breaking image analysis in your industry.</p>
@@ -120,18 +122,19 @@
 					</section>
                     <section class="feature right">
 						<a class="image">
-							<img src="images/pic01.png" alt="" style="width: 100%;"/>
+							<img src="images/pic01.png" alt="" style="width: 100%; height: 100%;"/>
 						</a>
-						<img class="modalMouseOver" src="images/glassesOverlay.png" style="width: 8%; height: 7%; top: 15%; left:59%;" onmouseover="showGlasses(this)" onmouseout="offGlasses(this)" onmousedown="showGlasses(this)">
-						<img class="modalMouseOver" src="images/jacketOverlay.png" style="width: 7.5%; height: 70%; top: 30%; left:61%;"onmouseover="showJacketLeft(this)" onmouseout="offJacketLeft(this)" onmousedown="showJacketLeft(this)">
-						<img class="modalMouseOver" src="images/jacketOverlay.png" style="width: 6%; height: 68%; top: 32%; left:72.5%;"onmouseover="showJacketRight(this)" onmouseout="offJacketRight(this)" onmousedown="showJacketRight(this)">
+						
+						<img class="modalMouseOver" id="jakcetleft" src="images/jacketOverlay.png" style="width: 7.5%; height: 70%; top: 30%; left:61%;"onmouseover="showJacketLeft(this)" onmouseout="offJacketLeft(this)" onmousedown="showJacketLeft(this)">
+                        <img class="modalMouseOver" id="glasses" src="images/glassesOverlay.png" style="width: 8%; height: 7%; top: 15%; left:68%;" onmouseover="showGlasses(this)" onmouseout="offGlasses(this)" onmousedown="showGlasses(this)">
+						<img class="modalMouseOver" id="jacketright" src="images/jacketOverlay.png" style="width: 6%; height: 68%; top: 32%; left:72.5%;"onmouseover="showJacketRight(this)" onmouseout="offJacketRight(this)" onmousedown="showJacketRight(this)">
 						<div class="content">
-							<h3>Revolutionize Advertising</h3>
+							<h3>Empower your images</h3>
 							<p>Monetize your content with intrinsic advertising. Allow users to immediately interact with the products they discover.</p>
 						</div>
 					</section>
 					<section class="feature left">
-						<a class="image"><img src="images/pic03.jpg" style="width: 100%;"  alt="" /></a>
+						<a class="image"><img src="images/pic03.jpg" style="width: 100%; height: 100%;"  alt="" /></a>
 						<div class="content">
 							<h3>Research and Development</h3>
 							<p>Fueling innovative products through our passion for constant research in Machine Learning and Image Processing.</p>
@@ -368,61 +371,137 @@
 			<script type="text/javascript" src="examples.js"></script>
 
 			<script>
-			function showGlasses(x) {
-				x.style.width = "50%";
-				x.style.height = "100%";
-				x.style.top = "0px";
-				x.style.left ="50%";
+                var widthW = window.screen.availWidth;
+            
+            function showGlasses(x) {
+                if( $(window).width() > 768 ) {
+                    x.style.width = "50%";
+                    x.style.height = "100%";
+                    x.style.top = "0px";
+                    x.style.left ="50%";
+                } else if( $(window).width() > 436 ) {
+                    x.style.width = "100%";
+                    x.style.height = "60%";
+                    x.style.top = "0px";
+                    x.style.left ="0px";
+                } else {
+                    x.style.width = "100%";
+                    x.style.height = "53%";
+                    x.style.top = "0px";
+                    x.style.left ="0px";
+                }
 			}
 
 			function offGlasses(x) {
-				x.style.width = "8%";
-				x.style.height= "10%";
-				x.style.top = "15%";
-				x.style.left = "68%";
+                if( $(window).width() > 768 ) {
+                    x.style.width = "8%";
+                    x.style.height= "10%";
+                    x.style.top = "15%";
+                    x.style.left = "68%";
+                } else {
+                    x.style.width = "14%";
+                    x.style.height= "5%";
+                    x.style.top = "9%";
+                    x.style.left = "37%";
+                }
 			}
 			function showJacketLeft(x) {
-				x.style.width = "50%";
-				x.style.height = "100%";
-				x.style.top = "0px";
-				x.style.left ="50%";
+                if( $(window).width() > 768 ) {
+                    x.style.width = "50%";
+                    x.style.height = "100%";
+                    x.style.top = "0px";
+                    x.style.left ="50%";
+                } else if( $(window).width() > 436 ) {
+                    x.style.width = "100%";
+                    x.style.height = "60%";
+                    x.style.top = "0px";
+                    x.style.left ="0px";
+                } else {
+                    x.style.width = "100%";
+                    x.style.height = "53%";
+                    x.style.top = "0px";
+                    x.style.left ="0px";
+                }
 			}
 
 			function offJacketLeft(x) {
-				x.style.width = "7.5%";
-				x.style.height= "70%";
-				x.style.top = "30%";
-				x.style.left = "61%";
-
+                if( $(window).width() > 768 ) {
+                    x.style.width = "7.5%";
+                    x.style.height= "70%";
+                    x.style.top = "30%";
+                    x.style.left = "61%";
+                } else {
+                    x.style.width = "13%";
+                    x.style.height= "40%";
+                    x.style.top = "20%";
+                    x.style.left = "23%";
+                }
 			}
 			function showJacketRight(x) {
-				x.style.width = "50%";
-				x.style.height = "100%";
-				x.style.top = "0px";
-				x.style.left ="50%";
+                if( $(window).width() > 768 ) {
+                    x.style.width = "50%";
+                    x.style.height = "100%";
+                    x.style.top = "0px";
+                    x.style.left ="50%";
+                } else if( $(window).width() > 436 ) {
+                    x.style.width = "100%";
+                    x.style.height = "60%";
+                    x.style.top = "0px";
+                    x.style.left ="0px";
+                } else {
+                    x.style.width = "100%";
+                    x.style.height = "53%";
+                    x.style.top = "0px";
+                    x.style.left ="0px";
+                }
 			}
 
 			function offJacketRight(x) {
-				x.style.width = "6%";
-				x.style.height= "68%";
-				x.style.top = "32%";
-				x.style.left = "72.5%";
-
+                if( $(window).width() > 768 ) {
+                    x.style.width = "6%";
+                    x.style.height= "68%";
+                    x.style.top = "32%";
+                    x.style.left = "72.5%";
+                } else {
+                    x.style.width = "13%";
+                    x.style.height= "35%";
+                    x.style.top = "25%";
+                    x.style.left = "45%";
+                }
 			}
+                
 			function showBrain(x) {
-				x.style.width = "50%";
-				x.style.height = "100%";
-				x.style.top = "0px";
-				x.style.left ="0px";
+                if( $(window).width() > 768 ) {
+                    x.style.width = "50%";
+                    x.style.height = "100%";
+                    x.style.top = "0px";
+                    x.style.left ="0px";
+                } else if( $(window).width() > 436 ) {
+                    x.style.width = "100%";
+                    x.style.height = "60%";
+                    x.style.top = "0px";
+                    x.style.left ="0px";
+                } else {  
+                    x.style.width = "100%";
+                    x.style.height = "53%";
+                    x.style.top = "0px";
+                    x.style.left ="0px";
+                }
 			}
 
 			function offBrain(x) {
-				x.style.width = "8%";
-				x.style.height= "16%";
-				x.style.top = "31%";
-				x.style.left = "9%";
-
-			}
+                if( $(window).width() > 768 ) {
+                    x.style.width = "8%";
+                    x.style.height = "16%";
+                    x.style.top = "31%";
+                    x.style.left ="9%";
+                } else {
+                    x.style.width = "12%";
+                    x.style.height= "12%";
+                    x.style.top = "15%";
+                    x.style.left = "20%";
+                }
+			}       
 
 			</script>
 	</body>
