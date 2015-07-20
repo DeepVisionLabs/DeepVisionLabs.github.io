@@ -3166,3 +3166,13 @@
 #glasses:hover {
         z-index: 1
 }
+#glasses:click {
+        z-index: 1
+}
+#jacketleft:click {
+        z-index: 1
+}
+
+#jacketright:click {
+        z-index: 1
+}
