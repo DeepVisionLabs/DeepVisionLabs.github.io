@@ -3166,13 +3166,4 @@
 #glasses:hover {
         z-index: 1
 }
-#glasses:focus {
-        z-index: auto
-}
-#jacketleft:focus {
-        z-index: auto
-}
 
-#jacketright:focus {
-        z-index: auto
-}
