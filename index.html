@@ -6,8 +6,10 @@
 -->
 <html>
 	<head>
-		<title>DeepVision</title>
+		<title>DeepVision - Unleashing the Power of Your Images</title>
 		<meta charset="utf-8" />
+		<meta name="description=" content="DeepVision uses deep learning and proprietary image processing technology to delve into the depths of what is truly displayed in images,
+		and instantly allows users to interact with objects within images. We leverage this innovative technology to create user friendly products for any industry in need of image analysis.">
 		<meta name="google-site-verification" content="2BDmVkUT-SFYcPlcpYx1UB5HRu-bCnQVKY8hyhHws9s" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -75,7 +77,7 @@
 	}
 
         </style>
-        
+
          <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 	</head>
 	<body>
@@ -124,7 +126,7 @@
 						<a class="image">
 							<img id="gbr" src="images/pic01.png" alt="" style="width: 100%; height: 100%;"/>
 						</a>
-						
+
 						<img class="modalMouseOver" id="jacketleft" src="images/jacketOverlay.png" style="width: 7.5%; height: 70%; top: 30%; left:61%;"onmouseover="showJacketLeft(this)" onmouseout="offJacketLeft(this)" onmousedown="showJacketLeft(this)" onclick="showJacketLeft(this); glasses();">
                         <img class="modalMouseOver" id="glasses" src="images/glassesOverlay.png" style="width: 8%; height: 7%; top: 15%; left:68%;" onmouseover="showGlasses(this)" onmouseout="offGlasses(this)" onmousedown="showGlasses(this)" onclick="showGlasses(this); jacket();">
 						<img class="modalMouseOver" id="jacketright" src="images/jacketOverlay.png" style="width: 6%; height: 68%; top: 32%; left:72.5%;"onmouseover="showJacketRight(this)" onmouseout="offJacketRight(this)" onmousedown="showJacketRight(this)" onclick="showJacketRight(this); glasses();">
@@ -372,7 +374,7 @@
 
 			<script>
                 var widthW = window.screen.availWidth;
-            
+
             function showGlasses(x) {
                 if( $(window).width() > 768 ) {
                     x.style.width = "50%";
@@ -484,7 +486,7 @@
                     x.style.left = "45%";
                 }
 			}
-                
+
 			function showBrain(x) {
                 if( $(window).width() > 768 ) {
                     x.style.width = "50%";
@@ -496,7 +498,7 @@
                     x.style.height = "60%";
                     x.style.top = "0px";
                     x.style.left ="0px";
-                } else {  
+                } else {
                     x.style.width = "100%";
                     x.style.height = "53%";
                     x.style.top = "0px";
@@ -516,14 +518,14 @@
                     x.style.top = "15%";
                     x.style.left = "20%";
                 }
-			} 
-			
+			}
+
 			function jacket() {
 				document.getElementById(jacketright).style.zIndex = "1";
 				document.getElementById(jacketleft).style.zIndex = "1";
 				document.getElementById(glasses).style.zIndex = "0";
 			}
-			
+
 			function glasses() {
 				document.getElementById(glasses).style.zIndex = "2";
 			}
