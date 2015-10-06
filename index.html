@@ -126,9 +126,9 @@
 							<img id="gbr" src="images/pic01.png" alt="" style="width: 100%; height: 100%;"/>
 						</a>
 
-						<img class="modalMouseOver" id="jacketleft" src="images/jacketOverlay.png" style="width: 7.5%; height: 70%; top: 30%; left:61%;"onmouseover="showJacketLeft(this)" onmouseout="offJacketLeft(this)" onmousedown="showJacketLeft(this)" onclick="showJacketLeft(this); glasses();">
-                        <img class="modalMouseOver" id="glasses" src="images/glassesOverlay.png" style="width: 8%; height: 7%; top: 15%; left:68%;" onmouseover="showGlasses(this)" onmouseout="offGlasses(this)" onmousedown="showGlasses(this)" onclick="showGlasses(this); jacket();">
-						<img class="modalMouseOver" id="jacketright" src="images/jacketOverlay.png" style="width: 6%; height: 68%; top: 32%; left:72.5%;"onmouseover="showJacketRight(this)" onmouseout="offJacketRight(this)" onmousedown="showJacketRight(this)" onclick="showJacketRight(this); glasses();">
+						<img class="modalMouseOver" id="jacketleft" src="images/jacketOverlay.png" style="width: 7.5%; height: 70%; top: 30%; left:61%;"onmouseover="showJacketLeft(this)" onmouseout="offJacketLeft(this)" onmousedown="showJacketLeft(this)" onclick="jacket(this);">
+            <img class="modalMouseOver" id="glass" src="images/glassesOverlay.png" style="width: 8%; height: 7%; top: 15%; left:68%;" onmouseover="showGlasses(this)" onmouseout="offGlasses(this)" onmousedown="showGlasses(this)" onclick="glasses(this);">
+						<img class="modalMouseOver" id="jacketright" src="images/jacketOverlay.png" style="width: 6%; height: 68%; top: 32%; left:72.5%;"onmouseover="showJacketRight(this)" onmouseout="offJacketRight(this)" onmousedown="showJacketRight(this)" onclick="jacket(this)">
 						<div class="content">
 							<h3>Empower your images</h3>
 							<p>Monetize your content with intrinsic advertising. Allow users to immediately <b>interact</b> with the products they discover.</p>
@@ -293,8 +293,8 @@
 				-->
 
 				<footer class="major container 75%">
-					<h3>API Beta Tester Waiting List</h3>
-					<p>Our exclusive API lets you upload products to our database so that anyone can tag your products in their images. Sign up below to join our list of API beta testers and hyperdrive your traction!</p>
+					<h3>API Beta Tester Sign-up</h3>
+					<p>Our exclusive API lets you upload products to our platform and enables them to be discovered in images around the web. Sign up below to join our growing list of beta testers:</p>
 
 					<form method="POST" action="http://formspree.io/contact@deepvision.co">
 						<input type="hidden" name="subject" value="API Beta Test Sign Up" />
@@ -316,7 +316,7 @@
 						<h2>Questions, comments, or want more information?</h2>
 					</header>
 
-					<p>Email any general or press inquiries to <a href="mailto:contact@deepvision.co">contact@deepvision.co</a> , or just use the form below.</p>
+					<p>Email any general or press inquiries to <a href="mailto:contact@deepvision.co">contact@deepvision.co</a> , or just use the form below:</p>
 
 					<form method="POST" action="http://formspree.io/contact@deepvision.co">
 					<input type="hidden" name="subject" value="General Inquiry" />
@@ -518,15 +518,16 @@
                     x.style.left = "20%";
                 }
 			}
-
 			function jacket() {
 				document.getElementById(jacketright).style.zIndex = "1";
 				document.getElementById(jacketleft).style.zIndex = "1";
-				document.getElementById(glasses).style.zIndex = "0";
+				document.getElementById(glass).style.zIndex = "0";
 			}
-
 			function glasses() {
-				document.getElementById(glasses).style.zIndex = "2";
+
+					document.getElementById(jacketright).style.zIndex = "0";
+					document.getElementById(jacketleft).style.zIndex = "0";
+					document.getElementById(glass).style.zIndex = "1";
 			}
 
 			</script>
